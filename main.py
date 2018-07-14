@@ -174,7 +174,7 @@ for lbp2 in neighbourhood_table_test:
     lbp_duplicated_features_test.append(duplicated_regions)
     counter4 = counter4 + 1
 
-class Klasyfikator():
+class classifier():
     def __init__(self):
         self.features_train = []
         self.labels_train = []
@@ -264,7 +264,7 @@ class Klasyfikator():
 lbp_duplicated_labels_train = []
 lbp_duplicated_labels_test = []
 
-Model = Klasyfikator()
+Model = classifier()
 Model.fit(lbp_duplicated_features_train,lbp_duplicated_labels_train)
 Model.calculate_train()
 Model.train_data_false_true_maker()
